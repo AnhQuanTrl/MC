@@ -1,0 +1,12 @@
+
+        void main() {
+        int n, rev; rev = 0;
+        n = 4532; 
+        do  {
+            int remainder;       
+            remainder = n % 10;
+            rev = rev * 10 + remainder;
+            n = n / 10;
+        } while (n != 0);
+        putIntLn(rev);
+        }

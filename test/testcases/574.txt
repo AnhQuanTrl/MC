@@ -1,0 +1,16 @@
+
+        void main() {
+            boolean bs[4];
+            int i;
+            i = 0;
+            do {
+                int j;
+                j = i;
+                bs[j] = true;
+            } i = i + 1; while (i < 4);
+            putBoolLn(returnBool(bs)[2]);
+        }
+        boolean[] returnBool(boolean bs[]) {
+            bs[2] = false;
+            return bs;
+        }

@@ -1,0 +1,8 @@
+
+        void main() {
+            int b;
+            b = 5;
+            a + b - 1 % 10 / (b = 2);
+            putIntLn(b);
+        } int a;
+        

@@ -1,0 +1,14 @@
+
+
+        boolean foo(int a) {
+            putIntLn(a);
+            return true;
+        }
+        void main() {
+            int b;
+            b = 5;
+            if (true || foo(b)) {
+
+            }
+        }
+        

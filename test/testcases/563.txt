@@ -1,0 +1,19 @@
+
+        int f() {
+            return i;
+        }
+        void main() {
+            int main;
+            main = f();
+            putIntLn(main);
+            {
+                int i, main, f;
+                main = f = i = 100;
+                putIntLn(i);
+                putIntLn(main);
+                putIntLn(f);
+            }
+            putIntLn(main);
+        }
+        int i;
+        

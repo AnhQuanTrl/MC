@@ -1,0 +1,10 @@
+
+        void main() {
+            putIntLn(looping());
+        }
+        int looping() {
+            for (1; true; 2) {
+                return 2;
+            }
+            return 3;
+        }

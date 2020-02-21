@@ -1,0 +1,37 @@
+
+        void main() {
+            int a[5];
+            a[0] =  1;
+            a[1] =  2;
+            a[2] =  10;
+            a[3] =  77;
+            a[4] =  88;
+            {
+                int b;
+                b = binsearch(77, a, 5);
+                putIntLn(b);
+            }
+            {
+                int c;
+                c = binsearch(9, a, 5);
+                putIntLn(c);
+            }
+        }
+        int binsearch(int x, int v[], int n)
+        {
+            int low, high;
+            low = 0;
+            high = n - 1;
+            do {
+                int mid;
+                mid = (low+high)/2;
+                if (x < v[mid])
+                    high = mid - 1;
+                else if (x > v[mid])
+                    low = mid + 1;
+                else 
+                    return mid;
+            } while (low <= high);
+            return -1;
+        }
+        

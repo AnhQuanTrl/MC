@@ -1,0 +1,14 @@
+
+        void main() {
+        int j; j = 0; 
+        do {
+            {
+                if (j == 7) {
+                    j = j+1;
+                    continue;
+                }
+                 putInt(j);
+            }
+            j = j+1;
+        } while (j < 10);
+        }

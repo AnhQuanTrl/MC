@@ -1,0 +1,11 @@
+
+        int[] foo() {
+            int a[3];
+            a[1] = 2;
+            putIntLn(a[1]);
+            return a;
+        }
+        void main() {
+            foo()[2];
+        }
+        

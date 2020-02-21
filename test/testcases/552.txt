@@ -1,0 +1,18 @@
+
+        void main() {
+        int j; j = 0; 
+        for (1; j<6; j=j+1) {
+            int i; boolean b;
+            for (i = 0; b=(i<j); i=i+1) {
+                if (i % 2 == 0) {
+                    continue;
+                }
+                putInt(i);
+                putString(" ");
+            } 
+            if (j * 3 <= 3) {
+                continue;
+            }
+            putLn();
+        }
+        }

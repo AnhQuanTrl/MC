@@ -1,0 +1,8 @@
+
+        boolean  c() {
+            putLn();
+            return true;
+        }
+        void main() {
+            (false || true) && c();
+        }

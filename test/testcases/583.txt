@@ -1,0 +1,49 @@
+
+        float abs(float x) {
+            if (x >= 0) 
+                return x;
+            else
+                return -x;
+        }
+        void main() {
+            float n;
+            n= 3;
+            findSqrt(n);
+        }
+        float Square(float n, float i, float j) 
+        { 
+            float mid;
+            mid = (i + j) / 2; 
+            float mul;
+            mul = mid * mid; 
+
+            if ((abs(mul - n) < 0.0001)) 
+                return mid; 
+            else if (mul < n) 
+                return Square(n, mid, j); 
+            else
+                return Square(n, i, mid); 
+        } 
+        
+
+        void findSqrt(float n) 
+        { 
+            float i;
+            i = 1; 
+            boolean found;
+            found = false; 
+            do {
+                if (abs(i * i - n) < 0.0001) { 
+                    putFloat(i);
+                    found = true; 
+                } 
+                else if (i * i > n) { 
+                    float res;
+                    res = Square(n, i - 1, i); 
+                    putFloat(res);
+                    found = true; 
+                }
+                i=i+1;
+            } while (!found);
+        } 
+        

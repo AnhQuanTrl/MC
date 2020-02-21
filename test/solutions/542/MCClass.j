@@ -1,0 +1,60 @@
+.source MCClass.java
+.class public MCClass
+.super java.lang.Object
+
+.method public static main([Ljava/lang/String;)V
+.var 0 is args [Ljava/lang/String; from Label0 to Label1
+Label0:
+	iconst_2
+	ineg
+	istore_1
+	iload_1
+	bipush 99
+	irem
+	i2f
+	ldc 1.0
+	iconst_2
+	i2f
+	fmul
+	fcmpl
+	ifle Label2
+	iconst_1
+	goto Label3
+Label2:
+	iconst_0
+Label3:
+	ifle Label4
+	ldc 2.99
+	fstore_2
+	goto Label5
+Label4:
+Label6:
+	bipush 10
+	istore_3
+	iload_3
+	invokestatic io/putIntLn(I)V
+	ldc 4.0
+	iload_3
+	i2f
+	fmul
+	fstore_2
+Label7:
+Label5:
+	fload_2
+	invokestatic io/putFloatLn(F)V
+Label1:
+	return
+.limit stack 3
+.limit locals 4
+.end method
+
+.method public <init>()V
+.var 0 is this LMCClass; from Label0 to Label1
+	aload_0
+	invokespecial java/lang/Object/<init>()V
+Label0:
+Label1:
+	return
+.limit stack 1
+.limit locals 1
+.end method

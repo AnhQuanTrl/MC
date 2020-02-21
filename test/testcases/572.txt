@@ -1,0 +1,9 @@
+
+        void main() {
+            float b;
+            b = intToFloat(5);
+            putFloatLn(b);
+        }
+        float intToFloat(int a) {
+            return a;
+        }

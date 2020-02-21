@@ -1,0 +1,12 @@
+
+        void main() {
+        boolean a;
+        a = true && false || !false && (true || false);
+        boolean b;
+        b = 4 * -1 > -5.0 + 100;
+        if (a && b) 
+            putString("True");
+        else
+            putString("False");
+        }
+        

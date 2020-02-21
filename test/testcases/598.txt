@@ -1,0 +1,14 @@
+
+        boolean leap(int year) {
+            if (year % 400 == 0) return true;
+            if (year % 100 == 0) return false;
+            if (year % 4 == 0) return true;
+            return false;
+        }
+        void main() {
+            putBoolLn(leap(2012));
+            putBoolLn(leap(2000));
+            putBoolLn(leap(1900));
+            putBoolLn(leap(1901));
+        }
+        

@@ -1,0 +1,17 @@
+
+        void main() {
+            putFloatLn(looping());
+        }
+        float looping() {
+            int i;
+            i = 3;
+            do {
+                {
+                    int a; 
+                    a = 4;
+                    putIntLn(a);
+                    return 3;
+                }
+                
+            } i = i + 1;while (i  < 10);
+        }

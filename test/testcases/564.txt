@@ -1,0 +1,26 @@
+
+        float a;
+        void main()
+        {
+            putFloatLn(a);
+            {
+                {
+                    float a;
+                    a =4.5;
+                    putFloatLn(a);
+                    {
+                        float a;
+                        a =10.0;
+                        putFloatLn(a);
+                    }
+                    {
+                        float a;
+                        a=9.0;
+                        putFloatLn(a);
+                    }
+                }
+                a = 1.0;
+            }
+            putFloatLn(a);
+        }
+        

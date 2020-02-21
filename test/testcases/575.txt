@@ -1,0 +1,14 @@
+
+        void main() {
+            string arr[3];
+            arr[0]="HelloWorld\n";
+            arr[1]="BotHere\n";
+            arr[2]="Decoded\n";
+            printStringArray(arr, 3);
+        }
+        void printStringArray(string bs[], int n) {
+            int i;
+            for (i = 0; i < n; i=i+1) {
+                putString(bs[i]);
+            }
+        }

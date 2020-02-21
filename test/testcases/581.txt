@@ -1,0 +1,35 @@
+
+        void printArr(int arr[], int n) {
+            int i;
+            i = 0;
+            if (i >= n) {
+                return;
+            }
+            do 
+                putInt(arr[i]);
+                putString(" " );
+             i = i + 1; while (i<n);
+        }
+        void main() {
+            int a[5];
+            a[0] =  4;
+            a[1] =  1;
+            a[2] =  55;
+            a[3] =  9;
+            a[4] =  49;
+            shellsort(a, 5);
+            printArr(a, 5);
+        }
+        void shellsort(int v[], int n)
+        {
+            int gap, i, j;
+            for (gap = n/2; gap > 0; gap = gap / 2)
+            for (i = gap; i < n; i=i+1)
+            for (j=i-gap; j>=0 && v[j]>v[j+gap]; j=j-gap) {
+                int temp;
+                temp = v[j];
+                v[j] = v[j+gap];
+                v[j+gap] = temp;
+            }
+        }
+        

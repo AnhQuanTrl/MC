@@ -1,0 +1,9 @@
+
+        void main() {
+        int rows, i, j; rows = 3;
+        for (i=1; i<=rows; i=i+1) {
+            for (j=1; j<=i; j=j+1)
+            { putString("* "); }
+            putLn();
+        }
+        }

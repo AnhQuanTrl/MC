@@ -1,0 +1,18 @@
+
+        int testInt(int a) {
+            return a*2+b[1];
+        }
+        float testFloat(float a) {
+            return a/0.01;
+        }
+        boolean testBool(boolean a) {
+            return !a;
+        }
+        int a; int b[5];
+        void main() {
+            b[1] = 4; b[2] = 8; a=1;
+            putIntLn(testInt(testInt(a) * 2 - (b[2]-1)%2));
+            putFloatLn(testFloat(b[1] % 3 - testFloat(a+0.01)));
+            putBoolLn(testBool(b[1] > 5 && b[2]*(a+1) > 4.0 || testBool(!!!(a > 1))));
+        }
+        

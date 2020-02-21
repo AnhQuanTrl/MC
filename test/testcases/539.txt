@@ -1,0 +1,7 @@
+
+        void main() {
+        int a; a = 2; boolean b; float c; c = 1.0; 
+        if (b=(a > 1)) 
+            c=2.99; 
+        putFloatLn(c); putBoolLn(b);
+        }

@@ -1,0 +1,9 @@
+void main() {
+            boolean a;
+            boolean b;
+            boolean c;
+            a = 9 > 0 || !(1!= 0);
+            b = 7 * 8 < 10 && !(b = true);
+            c = a && b;
+            putBoolLn(!c || a);
+        }

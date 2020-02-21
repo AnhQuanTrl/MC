@@ -1,0 +1,9 @@
+
+        int c() {
+            putLn();
+            return 1;
+        }
+        void main() {
+            int arr[3];
+            3 > -c();
+        }

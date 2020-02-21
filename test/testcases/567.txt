@@ -1,0 +1,9 @@
+
+        int foo(int a) {
+            return -a;
+        }
+        void main() {
+            int a;
+            a = 4;
+            putIntLn(foo(foo(foo(foo(a)))));
+        }

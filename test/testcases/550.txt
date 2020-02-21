@@ -1,0 +1,19 @@
+
+        void main() {
+        int j; j = 0; 
+        for (1; true; j=j+1) {
+            int i;
+            for (i = 0; true; i=i+1) {
+                if (i >= j) {
+                    break;
+                }
+                putInt(i);
+                putString(" ");
+            } 
+            if (j  >= 10) {
+                putStringLn("END");
+                break;
+            }
+            putLn();
+        }
+        }

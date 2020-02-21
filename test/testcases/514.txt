@@ -1,0 +1,1 @@
+void main() {int a; int b; a=2*15-1; b=a+0; putBoolLn(a!=b); }

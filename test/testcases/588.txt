@@ -1,0 +1,12 @@
+
+
+        boolean foo(int a) {
+            putIntLn(a);
+            return true;
+        }
+        void main() {
+            int b;
+            b = 5;
+            true && (b=3)>5 && foo(b);
+        }
+        

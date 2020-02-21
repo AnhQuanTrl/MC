@@ -1,0 +1,8 @@
+
+        void main() {
+        int a; a = 0; boolean c; c=false;
+        if (a != 0 && (c = !(a==1))) {
+            putStringLn("here");
+        }
+        putBoolLn(c);
+        }

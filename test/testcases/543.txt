@@ -1,0 +1,8 @@
+
+        void main() {
+        int a[3]; int i;
+        for (i = 0; i < 3; i=i+1) {
+            a[i] = i;
+        }
+        putIntLn(a[2]); 
+        }

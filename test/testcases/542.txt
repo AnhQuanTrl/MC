@@ -1,0 +1,12 @@
+
+        void main() {
+        int a; a = -2;  float c;
+        if (a % 99 > 1.0 * 2) 
+            c=2.99;
+        else {
+            int a; a = 10;
+            putIntLn(a);
+            c = 4.0*a;
+        }
+        putFloatLn(c); 
+        }

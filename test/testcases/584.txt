@@ -1,0 +1,16 @@
+
+        int c() {
+            return 9;
+        }
+        void main() {
+            float arr[5];
+            arr[4-1*100/99] = 4.0;
+            arr[3/2] = 9 * -  2 / 4;
+            arr[3*0*10000] = 0;
+            arr[2] = arr[c()/2] = arr[3] * arr[1] - 9;
+            int i;
+            for (i = 0; i < 5; i=i+1) {
+                putFloat(arr[i]);
+            } 
+        }
+        

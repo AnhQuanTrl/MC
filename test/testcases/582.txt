@@ -1,0 +1,32 @@
+
+        void main() {
+            int a[5];
+            a[0] =  4;
+            a[1] =  1;
+            a[2] =  55;
+            a[3] =  9;
+            a[4] =  49;
+            int b[3];
+            b[0] = 1;
+            b[1]= 55;
+            b[2] = 9;
+            putBoolLn(isSubset(a, b, 5, 3));
+        }
+        boolean isSubset(int arr1[], int arr2[],  
+                        int m, int n) 
+        { 
+            int i;
+            int j; 
+            for (i = 0; i < n; i=i+1) 
+            { 
+                for (j = 0; j < m; j=j+1) 
+                { 
+                    if(arr2[i] == arr1[j]) 
+                        break; 
+                } 
+                if (j == m) 
+                    return 0; 
+            } 
+            return 1; 
+        } 
+        

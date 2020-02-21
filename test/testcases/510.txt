@@ -1,0 +1,1 @@
+void main() {float a[2]; a[0]=a[1]=1*3+4; putFloatLn(a[0]/2+(a[1]-10)*2); }
